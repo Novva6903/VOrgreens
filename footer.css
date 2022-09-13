@@ -1,0 +1,146 @@
+#footer{
+    margin-top: 15%;
+    width: 100%;
+    min-height: 280px;
+    background: #449A00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    min-width: 130px;
+    min-height: 130px;
+    background-image: url(Asset/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.text1, .text2{
+    margin-left: 3%;
+    min-width: 280px;
+}
+
+.text1 p:first-child{
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 29.9px;
+    color: white;
+}
+
+.text1 p:nth-child(2){
+    font-family: 'Poppins';
+    font-size: 18.68px;
+    color: white;
+}
+
+.text1 p:nth-child(3){
+    font-family: 'Poppins';
+    font-size: 18.68px;
+    color: white;
+}
+
+.text1 p:nth-child(4){
+    background-image: url(Asset/phone.png);
+    background-repeat: no-repeat;
+    background-size: 6%;
+    background-position: left;
+    font-family: 'Poppins';
+    font-size: 18.68px;
+    color: white;
+}
+
+.text1 p:nth-child(5){
+    font-family: 'Poppins';
+    font-size: 18.68px;
+    color: white;
+}
+
+.text2 p:first-child{
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 29.9px;
+    color: white;
+}
+
+.text2 p:nth-child(2){
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 18.68px;
+    color: white;
+}
+
+.text2 p:nth-child(3){
+    font-family: 'Poppins';
+    font-size: 18.68px;
+    color: white;
+}
+
+.text2 p:nth-child(4){
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 18.68px;
+    color: white;
+}
+
+.text2 p:nth-child(5){
+    font-family: 'Poppins';
+    font-size: 18.68px;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    #footer{
+        min-height: 35vw;
+    }
+
+    .logo{
+        min-width: 17vw;
+        min-height: 17vw;
+    }
+
+    .text1, .text2{
+        min-width: 23.2vw;
+    }
+
+    .text1 p:first-child{
+        font-size: 3.9vw;
+    }
+    
+    .text1 p:nth-child(2){
+        font-size: 2.4vw;
+    }
+    
+    .text1 p:nth-child(3){
+        font-size: 2.4vw;
+    }
+    
+    .text1 p:nth-child(4){
+        font-size: 2.4vw;
+        background-size: 5%;
+    }
+    
+    .text1 p:nth-child(5){
+        font-size: 2.4vw;
+    }
+
+    .text2 p:first-child{
+        font-size: 3.9vw;
+    }
+    
+    .text2 p:nth-child(2){
+        font-size: 2.4vw;
+    }
+    
+    .text2 p:nth-child(3){
+        font-size: 2.4vw;
+    }
+    
+    .text2 p:nth-child(4){
+        font-size: 2.4vw;
+    }
+    
+    .text2 p:nth-child(5){
+        font-size: 2.4vw;
+    }
+}

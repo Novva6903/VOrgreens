@@ -1,0 +1,181 @@
+body{
+    background: #CDF9CC;
+}
+
+#promo{
+    margin-top: 7vw;
+    width: 100%;
+    height: 43.57vw;
+    background-image: url(Asset/promo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#VOr{
+    width: 100%;
+    min-height: 644px;
+    display: flex;
+    justify-content: center;
+}
+
+.VOrgreens{
+    width: 89%;
+}
+
+.VOrgreens p:first-child{
+    font-family: 'Poppins';
+    font-size: 108px;
+    text-align: center;
+    color: black;
+}
+
+.VOrgreens p:last-child{
+    font-family: 'Poppins';
+    font-size: 50px;
+    line-height: 75px;
+    padding-top: 3%;
+    text-align: center;
+    color: black;
+}
+
+#highlight{
+    margin-top: 7%;
+    width: 100%;
+    min-height: 528px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hs{
+    font-family: 'Poppins';
+    font-size: 108px;
+    text-align: center;
+    color: black;
+}
+
+.menus{
+    width: 89%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu{
+    margin-top: 3%;
+    width: 297px;
+    height: 335px; 
+    transition: 0.3s;
+    background-color: white;
+    margin-bottom: 3%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    line-height: 25px;
+}
+
+.menuText{
+    padding-left: 2px;
+    width: 293px;
+    height: 103px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.one{
+    background-image: url(Asset/menu/App\ 1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.two{
+    background-image: url(Asset/menu/Main\ Course\ 4.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.three{
+    background-image: url(Asset/menu/Desert\ 3.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.menu p{
+    text-align: center;
+}
+
+.menu p:first-child{
+    color: #449A00;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.menu p:nth-child(2){
+    font-size: 16px;
+}
+
+.menu p:nth-child(3){
+    line-height: 15px;
+    color: #449A00;
+    font-size: 11px;
+}
+
+.menu:hover{
+    width: 310px;
+    height: 350px;
+    box-shadow: 10px 10px 10px rgb(0,0,0,0.3);
+}
+
+@media screen and (max-width: 768px) {
+    #VOr{
+        min-height: 250px;
+    }
+
+    .VOrgreens p:first-child{
+        font-size: 50px;
+    }
+
+    .VOrgreens p:last-child{
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    .hs{
+        font-size: 50px;
+    }
+
+    .menu{
+        width: 237px;
+        height: 275px;
+        padding-bottom: 0;
+    }
+
+    .menuText{
+        padding-left: 1px;
+        width: 236px;
+        height: 90px;
+    }
+
+    .menu p:first-child{
+        color: #449A00;
+        font-weight: 800;
+        font-size: 14px;
+    }
+    
+    .menu p:nth-child(2){
+        font-size: 14px;
+    }
+    
+    .menu p:nth-child(3){
+        line-height: 15px;
+        color: #449A00;
+        font-size: 10px;
+    }
+    
+    .menu:hover{
+        width: 260px;
+        height: 294px;
+    }
+}

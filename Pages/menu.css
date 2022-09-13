@@ -1,0 +1,205 @@
+body{
+    background: #CDF9CC;
+}
+
+#menubg{
+    margin-top: 7vw;
+    width: 100%;
+    height: 35.41vw;
+    background-image: url(../Asset/menu/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#appetizer, #desert{
+    width: 100%;
+    min-height: 528px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuTexts{
+    font-family: 'Poppins';
+    line-height: 96px;
+    font-size: 64px;
+    font-weight: 500;
+    color: #2B890A;
+}
+
+.menus{
+    width: 92.39%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.main .menu{
+    margin: 5%;
+}
+
+.menu{
+    margin-top: 5%;
+    width: 297px;
+    height: 335px;
+    transition: 0.3s;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    margin-bottom: 5%;
+    flex-direction: column;
+    justify-content: flex-end;
+    line-height: 25px;
+}
+
+.menu:hover{
+    width: 310px;
+    height: 350px;
+    box-shadow: 10px 10px 10px rgb(0,0,0,0.3);
+}
+
+.menuText{
+    padding-left: 2px;
+    width: 293px;
+    height: 103px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu p{
+    text-align: center;
+}
+
+.menu p:nth-child(1){
+    font-size: 18px;
+}
+
+.menu p:nth-child(2){
+    margin-top: 2%;
+    line-height: 15px;
+    color: #449A00;
+    font-size: 11px;
+}
+
+#maincourse{
+    margin-top: 5%;
+    width: 100%;
+    min-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.one{
+    background-image: url(../Asset/menu/App\ 1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.two{
+    background-image: url(../Asset/menu/App\ 2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.three{
+    background-image: url(../Asset/menu/App\ 3.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.one2{
+    background-image: url(../Asset/menu/Main\ Course\ 1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.two2{
+    background-image: url(../Asset/menu/Main\ Course\ 2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.three2{
+    background-image: url(../Asset/menu/Main\ Course\ 3.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.four2{
+    background-image: url(../Asset/menu/Main\ Course\ 4.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.five2{
+    background-image: url(../Asset/menu/Main\ Course\ 5.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.six2{
+    background-image: url(../Asset/menu/Main\ Course\ 6.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.one3{
+    background-image: url(../Asset/menu/Desert\ 1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.two3{
+    background-image: url(../Asset/menu/Desert\ 2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.three3{
+    background-image: url(../Asset/menu/Desert\ 3.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    #maincourse, #desert{
+        margin-top: 15%;
+    }
+
+    .menuTexts{
+        font-size: 40px;
+    }
+
+    .main .menu{
+        margin-bottom: 0;
+    }
+
+    .menu{
+        width: 237px;
+        height: 275px;
+        margin-top: 0;
+    }
+    
+    .menuText{
+        padding-left: 1px;
+        width: 236px;
+        height: 90px;
+    }
+    
+    .menu p:nth-child(1){
+        font-size: 16px;
+    }
+    
+    .menu p:nth-child(2){
+        line-height: 15px;
+        color: #449A00;
+        font-size: 11px;
+    }
+
+    .menu:hover{
+        width: 260px;
+        height: 294px;
+    }
+}

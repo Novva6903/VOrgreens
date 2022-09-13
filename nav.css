@@ -1,0 +1,144 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#navbar{
+    width: 100%;
+    height: 7vw;
+    background: #449A00;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+}
+
+.t{
+    margin-left: 2%;
+    font-family: 'Rouge Script', cursive;
+    font-size: 6.08vw;
+    color: white;
+}
+
+.garis3{
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+
+.toggle{
+    margin-right: 2%;
+    height: 5vw;
+    width: 5vw;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.toggle .line{
+    position: fixed;
+    height: 0.5vw;
+    width: 4.16vw;
+    background-color: white;
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+
+.toggle .top{
+    top: 2.1vw;
+    right: 2.8vw;
+}
+
+.toggle .mid{
+    top: 3.35vw;
+    right: 2.8vw;
+}
+
+.toggle .bot{
+    top: 4.65vw;
+    right: 2.8vw;
+}
+
+.garis3:checked ~ .toggle .top{
+    top: 3vw;
+    transform: rotate(45deg);
+}
+
+.garis3:checked ~ .toggle .mid{
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+.garis3:checked ~ .toggle .bot{
+    top: 3vw;
+    transform: rotate(-45deg);
+}
+
+.garis3:checked ~ .box{
+    transform: translateX(0);
+}
+
+.garis3:checked ~ .overlay{
+    opacity: 35%;
+    pointer-events: visible;
+}
+
+.box{
+    margin-top: 1vw;
+    right: 0;
+    height: 100vh;
+    width: 390px;
+    position: absolute;
+    background-color: #449A00;
+    transition: 0.5s ease;
+    transform: translateX(400px);
+    box-shadow: -10px 0px 10px -10px rgb(0, 0, 0, 0.3);
+}
+
+.boxLink{
+    width: 390px;
+    height: 88.45px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+    color: white;
+    text-align: center;
+    padding-top: 3%;
+    font-size: 40px;
+    transition: 0.3s;
+}
+
+.box a{
+    text-decoration: none;
+}
+
+.boxLink:hover{
+    background-color: black;
+    opacity: 35%;
+}
+
+.overlay{
+    margin-top: 1vw;
+    position: absolute;
+    z-index: -1;
+    width: 4000px;
+    height: 4000px;
+    left: 0;
+    background-color: black;
+    opacity: 0;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 768px) {
+    .box, .boxLink{
+        width: 145px;
+    }
+    
+    .boxLink{
+        font-size: 16px;
+        padding-top: 15%;
+    }
+}

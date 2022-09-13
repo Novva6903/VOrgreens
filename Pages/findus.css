@@ -1,0 +1,203 @@
+body{
+    background: #CDF9CC;
+}
+
+.loc{
+    width: 100%;
+    text-align: center;
+    margin-top: 10vw;
+    font-family: 'Poppins';
+    font-size: 90px;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+#location, #location2{
+    margin-top: 3%;
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.first, .first2{
+    font-weight: 800;
+    font-size: 26px;
+}
+
+.texts1{
+    width: 400px;
+    line-height: 50px;
+    margin-right: 10%;
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.img1{
+    width: 413px;
+    height: 301.49px;
+    background-image: url(../Asset/FindUs/gmap.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: 0.3s;
+}
+
+.img1:hover{
+    width: 425px;
+    height: 310px;
+    box-shadow: 10px 10px 10px rgb(0,0,0,0.3);
+}
+
+.loca{
+    max-width: 400px;
+    min-width: 260px;
+    height: 50px;
+    display: flex;
+    justify-content: left;
+}
+
+.locpng{
+    width: 40px;
+    height: 40px;
+    background-image: url(../Asset/FindUs/loca.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+
+.phonepng{
+    width: 40px;
+    height: 40px;
+    background-image: url(../Asset/FindUs/phone.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+
+.messagepng{
+    width: 40px;
+    height: 40px;
+    background-image: url(../Asset/FindUs/message.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+
+#location2{
+    margin-top: 10%;
+    flex-wrap: wrap-reverse;
+}
+
+.img2{
+    margin-right: 10%;
+    width: 346px;
+    height: 361px;
+    background-image: url(../Asset/FindUs/Loc.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: 0.3s;
+}
+
+.img2:hover{
+    width: 375px;
+    height: 395px;
+    box-shadow: 10px 10px 10px rgb(0,0,0,0.3);
+}
+
+.texts2{
+    line-height: 50px;
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.week{
+    font-weight: 800;
+}
+
+.hour{
+    width: 40px;
+    height: 40px;
+    background-image: url(../Asset/FindUs/hour.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+}
+
+.locpng, .phonepng, .messagepng, .hour{
+    margin-right: 3%;
+}
+
+@media screen and (max-width: 768px) {
+
+    #location2{
+        flex-direction: column-reverse;
+    }
+
+    .loc{
+        font-size: 40px;
+    }
+
+    .loca{
+        margin-left: 8%;
+        justify-content: left;
+    }
+
+    .locpng, .phonepng, .messagepng, .hour{
+        background-size: 50%;
+        margin-right: 0;
+    }
+
+    .hour{
+        background-size: 60%;
+    }
+
+    .tw{
+        margin-left: 20%;
+    }
+
+    .texts1{
+        width: 300px;
+        margin-right: 0%;
+    }
+
+    .texts1, .texts2{
+        font-size: 16px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .first{
+        margin-bottom: 5%;
+    }
+
+    .img1{
+        margin-top: 3%;
+        width: 300px;
+        height: 200px;
+    }
+
+    .img1:hover{
+        width: 335px;
+        height: 210px;
+    }
+
+    .img2{
+        margin-right: 0%;
+        margin-top: 5%;
+        width: 250px;
+        height: 265px;
+    }
+
+    .img2:hover{
+        width: 265px;
+        height: 275px;
+    }
+    
+    .week{
+        text-align: center;
+    }
+}

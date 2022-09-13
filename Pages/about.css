@@ -1,0 +1,73 @@
+body{
+    background: #CDF9CC;
+}
+
+.about{
+    width: 100%;
+    min-height: 500px;
+    margin-top: 7vw;
+}
+
+.about p{
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: 'Poppins';
+}
+
+.about p:first-child{
+    text-align: center;
+    font-weight: 800;
+    font-size: 108px;
+    text-decoration: underline;
+    margin-bottom: 5%;
+}
+
+.about p:last-child{
+    text-align: justify;
+    font-size: 30px;
+    line-height: 50px;
+}
+
+.biarTengah{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.loc{
+    margin-top: 7%;
+    width: 452px;
+    height: 477.7px;
+    background-image: url(../Asset/FindUs/Loc.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: 0.3s;
+}
+
+.loc:hover{
+    width: 475px;
+    height: 500px;
+    box-shadow: 10px 10px 10px rgb(0,0,0,0.3);
+}
+
+@media screen and (max-width: 768px) {
+    .about p:first-child{
+        font-size: 40px;
+    }
+
+    .about p:last-child{
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .loc{
+        margin-top: 3%;
+        width: 275px;
+        height: 275px;
+    }
+
+    .loc:hover{
+        width: 325px;
+        height: 325px;
+    }
+}
